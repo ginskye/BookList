@@ -5,6 +5,7 @@ namespace BookList.Models
 {
     public class Books
     {
+        [Key]
         public int ID { get; set; }
         [StringLength(60, MinimumLength = 3)]
         [Required]
