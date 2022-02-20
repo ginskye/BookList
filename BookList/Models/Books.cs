@@ -12,10 +12,10 @@ namespace BookList.Models
         public string? Title { get; set; }
 
 
-        [Display(Name = "Author")]
+        [Display(Name = "Author Name, Last")]
         public string? AuthorLast { get; set; }
 
-        [Display(Name = "First")]
+        [Display(Name = "Author Name, First")]
         public string? AuthorFirst { get; set; }
 
 
