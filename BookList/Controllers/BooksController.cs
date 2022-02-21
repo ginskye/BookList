@@ -29,7 +29,7 @@ namespace BookList.Controllers
             {
                 books = books.Where(books => books.Title!.Contains(searchString)); // books => is the lambda expression here.  This search field works for title here, but you could select any database field using .FieldName
             }
-            return View(await _context.Books.ToListAsync());
+            return View(await books.ToListAsync());
         }
 
         // GET: Books/Details/5
