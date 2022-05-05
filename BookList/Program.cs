@@ -5,7 +5,7 @@ using BookList.Models;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<BookListContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("BookListContext")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("BookListContext"))); 
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
